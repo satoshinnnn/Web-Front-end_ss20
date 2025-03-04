@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=+prompt('moi nhap vao so nguyen bat ky');
+        let b=+prompt('moi nhap vao so mu cua so nguyen vua nhap');
+        let product=1;
+        if(isNaN(a)|| isNaN(b)|| b<0){
+            alert('khong hop le');
+        }else{
+            for(let i=1;i<=b;i++){
+                product=product*a;
+            }
+            alert(product);
+        }
+        
+    </script>
+</body>
+</html>

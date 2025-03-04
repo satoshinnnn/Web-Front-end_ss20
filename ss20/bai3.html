@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=+prompt('nhap vao 1 so nguyen bat ky');
+        let count = num.toString().length;
+        let flag=0;
+        if(isNaN(num)){
+            alert('so khong hop le');
+        }else if(num<10){
+            alert('khong la so doi xung');
+        }else{
+            let arr = num.toString().split('').map(Number);
+            for(let i=0; i<=(count); i++){
+                if(arr[i]!=arr[count-i-1]){
+                    flag=1;
+                }
+            }
+            if(flag==1){
+                alert('khong phai so doi xung');
+            }else{
+                alert('la so doi xung');
+            }
+        }
+    </script>
+</body>
+</html>

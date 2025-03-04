@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str=prompt('nhap vao chuoi bat ky');
+        let count=str.length;
+        let letter=prompt('nhap vao 1 ky tu bat ky');
+        let flag=0;
+        if(letter.length!==1 ){
+            alert('ky tu ban nhap khong hop le');
+        }else{
+            for(let i=0; i<count;i++){
+                if(letter==str[i]){
+                    alert('ton tai ky tu can tim');
+                    flag=1;
+                    break;
+                } 
+            }
+            if(flag==0){
+                alert('khong ton tai ky tu can tim');
+            }
+        }
+    </script>
+</body>
+</html>
