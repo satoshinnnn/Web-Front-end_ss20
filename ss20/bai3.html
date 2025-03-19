@@ -15,9 +15,9 @@
         }else if(num<10){
             alert('khong la so doi xung');
         }else{
-            let arr = num.toString().split('').map(Number);
-            for(let i=0; i<=(count); i++){
-                if(arr[i]!=arr[count-i-1]){
+           let arr = num.toString().split('').map(Number);  // biến số thành mảng, sau đó chuyển từng phần tử trong mảng thành số
+            for(let i=0; i<=(count/2); i++){     
+                if(arr[i]!=arr[count-i-1]){     // count-1=6, index: 0-6, 1-5, 2-4, 3-3 
                     flag=1;
                 }
             }
